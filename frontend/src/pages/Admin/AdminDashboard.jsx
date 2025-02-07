@@ -1,6 +1,7 @@
 import { Bell, Home, Award, Users, LogOut } from "lucide-react";
 import SideBar from "../../components/SideBar";
 import { NavLink } from "react-router-dom";
+import Header from "../../components/Header";
 
 function AdminDashboard() {
   // Sample admin data
@@ -29,27 +30,7 @@ function AdminDashboard() {
       <div className="bg-[#EDF6F7] flex-1 p-8">
         <div className="bg-white flex-1 overflow-auto rounded-lg">
           {/* Header */}
-          <header className="bg-white shadow-sm">
-            <div className="flex items-center justify-between px-8 py-4">
-              <h1 className="text-2xl font-bold">Admin Panel</h1>
-              <div className="flex items-center gap-4">
-                <button className="px-4 py-2 bg-[#67CDCD] text-black rounded-lg hover:bg-[#7fcad3]">
-                  Add Admin
-                </button>
-                <button className="p-2 hover:bg-gray-100 rounded-lg">
-                  <Bell size={20} />
-                </button>
-                <div className="flex items-center gap-2">
-                  <img
-                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="Profile"
-                    className="w-8 h-8 rounded-full"
-                  />
-                  <span>Chanodya</span>
-                </div>
-              </div>
-            </div>
-          </header>
+          <Header pgTitle="Admin Panel" />
 
           {/* Welcome Section */}
           <div className="p-8">
