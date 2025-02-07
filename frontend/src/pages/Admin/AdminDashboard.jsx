@@ -1,5 +1,6 @@
 import { Bell, Home, Award, Users, LogOut } from "lucide-react";
 import SideBar from "../../components/SideBar";
+import { NavLink } from "react-router-dom";
 
 function AdminDashboard() {
   // Sample admin data
@@ -65,7 +66,7 @@ function AdminDashboard() {
                 </div>
               </div>
               <button className="px-4 py-2 bg-[#67CDCD] text-black rounded-lg hover:bg-[#7fcad3]">
-                Edit Profile
+                <NavLink to="/admin/profile">Edit Profile</NavLink>
               </button>
             </div>
           </div>

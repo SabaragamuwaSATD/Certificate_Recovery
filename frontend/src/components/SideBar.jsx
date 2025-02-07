@@ -1,5 +1,6 @@
 import React from "react";
 import { Bell, Home, Award, Users, LogOut } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 function SideBar() {
   return (
@@ -16,11 +17,11 @@ function SideBar() {
             <div className="space-y-2">
               <button className="w-full flex items-center gap-3 px-4 py-2 text-left rounded-lg bg-[#91D9E2] text-black">
                 <Home size={20} />
-                <span>Admin</span>
+                <NavLink to="/admin">Admin</NavLink>
               </button>
               <button className="w-full flex items-center gap-3 px-4 py-2 text-left rounded-lg hover:bg-gray-100">
                 <Award size={20} />
-                <span>Certificate</span>
+                <NavLink to="/admin/certification">Certificate</NavLink>
               </button>
               <button className="w-full flex items-center gap-3 px-4 py-2 text-left rounded-lg hover:bg-gray-100">
                 <Users size={20} />
